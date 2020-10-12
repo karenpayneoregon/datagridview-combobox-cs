@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewComboCS", "DataGridViewComboCS\DataGridViewComboCS.csproj", "{585DF517-D420-41C0-AA75-7FCB7C69B167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CC602CA-54C2-4A64-84F4-C92DFB42A6DE}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{585DF517-D420-41C0-AA75-7FCB7C69B167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585DF517-D420-41C0-AA75-7FCB7C69B167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585DF517-D420-41C0-AA75-7FCB7C69B167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585DF517-D420-41C0-AA75-7FCB7C69B167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD37C4B0-D859-4AB3-93B3-1F2192CFF9D4}
+	EndGlobalSection
+EndGlobal
