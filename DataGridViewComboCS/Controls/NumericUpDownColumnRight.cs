@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataGridViewComboCS.Controls
+namespace DataGridViewCombo1.Controls
 {
     public class NumericUpDownColumnRight : DataGridViewColumn
     {

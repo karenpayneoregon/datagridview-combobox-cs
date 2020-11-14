@@ -1,4 +1,4 @@
-﻿namespace DataGridViewComboCS
+﻿namespace DataGridViewCombo1
 {
     partial class Form1
     {
@@ -33,10 +33,10 @@
             this.CurrentRowViewButton = new System.Windows.Forms.Button();
             this.CustomersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numericUpDownColumnRight1 = new DataGridViewComboCS.Controls.NumericUpDownColumnRight();
+            this.numericUpDownColumnRight1 = new DataGridViewCombo1.Controls.NumericUpDownColumnRight();
             this.ItemTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.QtyNumericUpDownColumn = new DataGridViewComboCS.Controls.NumericUpDownColumnRight();
+            this.QtyNumericUpDownColumn = new DataGridViewCombo1.Controls.NumericUpDownColumnRight();
             this.InCartCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.VendorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Panel1.SuspendLayout();

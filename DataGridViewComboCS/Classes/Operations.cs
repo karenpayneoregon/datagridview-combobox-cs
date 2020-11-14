@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 
-namespace DataGridViewComboCS.Classes
+namespace DataGridViewCombo1.Classes
 {
     public class Operations
     {

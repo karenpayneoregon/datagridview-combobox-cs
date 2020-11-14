@@ -1,12 +1,13 @@
-﻿using DataGridViewComboCS.Classes;
+﻿
 using System;
 using System.Data;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataGridViewCombo1.Classes;
 
-namespace DataGridViewComboCS
+namespace DataGridViewCombo1
 {
     public partial class Form1 : Form
     {

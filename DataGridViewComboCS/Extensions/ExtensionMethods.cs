@@ -1,7 +1,7 @@
-﻿using DataGridViewComboCS.Controls;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using DataGridViewCombo1.Controls;
 
-namespace DataGridViewComboCS.Extensions
+namespace DataGridViewCombo1.Extensions
 {
     public static class ExtensionMethods
     {
