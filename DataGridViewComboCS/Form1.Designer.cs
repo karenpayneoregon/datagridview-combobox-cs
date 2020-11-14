@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.DisplayInformationTextBox = new System.Windows.Forms.TextBox();
             this.CurrentRowViewButton = new System.Windows.Forms.Button();
             this.CustomersDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numericUpDownColumnRight1 = new DataGridViewComboCS.Controls.NumericUpDownColumnRight();
             this.ItemTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.QtyNumericUpDownColumn = new DataGridViewComboCS.Controls.NumericUpDownColumnRight();
             this.InCartCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.VendorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numericUpDownColumnRight1 = new DataGridViewComboCS.Controls.NumericUpDownColumnRight();
-            this.DisplayInformationTextBox = new System.Windows.Forms.TextBox();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,13 @@
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(563, 64);
             this.Panel1.TabIndex = 2;
+            // 
+            // DisplayInformationTextBox
+            // 
+            this.DisplayInformationTextBox.Location = new System.Drawing.Point(95, 33);
+            this.DisplayInformationTextBox.Name = "DisplayInformationTextBox";
+            this.DisplayInformationTextBox.Size = new System.Drawing.Size(456, 20);
+            this.DisplayInformationTextBox.TabIndex = 3;
             // 
             // CurrentRowViewButton
             // 
@@ -78,6 +85,18 @@
             this.CustomersDataGridView.Size = new System.Drawing.Size(563, 187);
             this.CustomersDataGridView.TabIndex = 3;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // numericUpDownColumnRight1
+            // 
+            this.numericUpDownColumnRight1.DecimalPlaces = 2;
+            this.numericUpDownColumnRight1.HeaderText = "Qty";
+            this.numericUpDownColumnRight1.Name = "numericUpDownColumnRight1";
+            // 
             // ItemTextBoxColumn
             // 
             this.ItemTextBoxColumn.HeaderText = "Item";
@@ -88,6 +107,7 @@
             // 
             this.ColorComboBoxColumn.HeaderText = "Color";
             this.ColorComboBoxColumn.Name = "ColorComboBoxColumn";
+            this.ColorComboBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // QtyNumericUpDownColumn
             // 
@@ -104,25 +124,6 @@
             // 
             this.VendorComboBoxColumn.HeaderText = "Vendor";
             this.VendorComboBoxColumn.Name = "VendorComboBoxColumn";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // numericUpDownColumnRight1
-            // 
-            this.numericUpDownColumnRight1.DecimalPlaces = 2;
-            this.numericUpDownColumnRight1.HeaderText = "Qty";
-            this.numericUpDownColumnRight1.Name = "numericUpDownColumnRight1";
-            // 
-            // DisplayInformationTextBox
-            // 
-            this.DisplayInformationTextBox.Location = new System.Drawing.Point(95, 33);
-            this.DisplayInformationTextBox.Name = "DisplayInformationTextBox";
-            this.DisplayInformationTextBox.Size = new System.Drawing.Size(456, 20);
-            this.DisplayInformationTextBox.TabIndex = 3;
             // 
             // Form1
             // 
@@ -149,12 +150,12 @@
         internal System.Windows.Forms.DataGridView CustomersDataGridView;
         private Controls.NumericUpDownColumnRight numericUpDownColumnRight1;
         private System.Windows.Forms.Button CurrentRowViewButton;
+        private System.Windows.Forms.TextBox DisplayInformationTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn ColorComboBoxColumn;
         private Controls.NumericUpDownColumnRight QtyNumericUpDownColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn InCartCheckBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn VendorComboBoxColumn;
-        private System.Windows.Forms.TextBox DisplayInformationTextBox;
     }
 }
 

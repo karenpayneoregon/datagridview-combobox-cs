@@ -27,11 +27,16 @@ namespace DataGridViewComboCS
             Setup();
 
             CustomersDataGridView.AllowUserToAddRows = false ;
+            _customerBindingSource.PositionChanged += _customerBindingSource_PositionChanged;
 
             LoadData();
-
             CurrentValuesView();
 
+        }
+
+        private void _customerBindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            CurrentValuesView();
         }
 
         private void Setup()
@@ -48,12 +53,14 @@ namespace DataGridViewComboCS
             ColorComboBoxColumn.DataPropertyName = "ColorId";
             ColorComboBoxColumn.DataSource = _colorBindingSource;
             ColorComboBoxColumn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            VendorComboBoxColumn.SortMode = DataGridViewColumnSortMode.Automatic;
 
             VendorComboBoxColumn.DisplayMember = "VendorName";
             VendorComboBoxColumn.ValueMember = "VendorId";
             VendorComboBoxColumn.DataPropertyName = "VendorId";
             VendorComboBoxColumn.DataSource = _vendorBindingSource;
             VendorComboBoxColumn.DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing;
+            VendorComboBoxColumn.SortMode = DataGridViewColumnSortMode.Automatic;
 
             QtyNumericUpDownColumn.DataPropertyName = "qty";
             InCartCheckBoxColumn.DataPropertyName = "InCart";
@@ -86,6 +93,12 @@ namespace DataGridViewComboCS
 
         private void CurrentValuesView()
         {
+
+            if (_customerBindingSource.Current == null)
+            {
+                return;
+            }
+
             var customerRow = ((DataRowView) _customerBindingSource.Current).Row;
             var customerPrimaryKey = customerRow.Field<int>("Id");
             var colorKey = customerRow.Field<int>("ColorId");
