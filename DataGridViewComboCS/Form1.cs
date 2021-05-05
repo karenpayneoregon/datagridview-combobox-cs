@@ -85,13 +85,24 @@ namespace DataGridViewCombo1
             CustomersDataGridView.CurrentCellDirtyStateChanged -= _CurrentCellDirtyStateChanged;
             CustomersDataGridView.CommitEdit(DataGridViewDataErrorContexts.Commit);
             CustomersDataGridView.CurrentCellDirtyStateChanged += _CurrentCellDirtyStateChanged;
+            CurrentValuesView();
         }
        
+        /// <summary>
+        /// Shows current values in current DataGridView row.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CurrentRowViewButton_Click(object sender, EventArgs e)
         {
             CurrentValuesView();
         }
 
+        /// <summary>
+        /// This is called from <see cref="_CurrentCellDirtyStateChanged"/> event,
+        /// everything in the method below called from _CurrentCellDirtyStateChanged has
+        /// what is needed to send the new values to the appropriate database table or tables.
+        /// </summary>
         private void CurrentValuesView()
         {
 
