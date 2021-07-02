@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataGridViewCombo1.Classes;
+using DataGridViewCombo1.Extensions;
 
 namespace DataGridViewCombo1
 {
@@ -115,6 +116,7 @@ namespace DataGridViewCombo1
             var customerPrimaryKey = customerRow.Field<int>("Id");
             var colorKey = customerRow.Field<int>("ColorId");
             var vendorKey = customerRow.Field<int>("VendorId");
+            var inCart = customerRow.Field<bool>("InCart");
 
             var vendorName = ((DataTable) _vendorBindingSource.DataSource)
                 .AsEnumerable()
@@ -128,7 +130,7 @@ namespace DataGridViewCombo1
 
 
             DisplayInformationTextBox.Text =
-                $"PK: {customerPrimaryKey} Vendor key {vendorKey} vendor: {vendorName} color id: {colorKey} - {colorName}";
+                $"PK: {customerPrimaryKey} Vendor key {vendorKey} vendor: {vendorName} color id: {colorKey} - {colorName} In Cart: {inCart.ToYesNoString()}";
         }
     }
 }

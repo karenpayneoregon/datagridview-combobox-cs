@@ -14,5 +14,5 @@ Simple code sample for DataGridViewComboBox feed from SQL-Server using DataTable
 
 # Requirements
 
-- SQL-Server 2012 or higher
-- Visual Studio 2017 or higher
+:heavy_check_mark: SQL-Server 2012 or higher
+:heavy_check_mark: Visual Studio 2017 or higher

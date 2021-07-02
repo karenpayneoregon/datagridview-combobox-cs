@@ -15,6 +15,7 @@ namespace DataGridViewCombo1.Extensions
                     result = true;
                 }
             }
+            
             return result;
         }
         public static bool IsNumericControl(this DataGridViewCell sender)
@@ -27,6 +28,7 @@ namespace DataGridViewCombo1.Extensions
                     result = true;
                 }
             }
+            
             return result;
         }
     }

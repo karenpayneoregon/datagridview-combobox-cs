@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\BooleanExtensions.cs" />
     <Compile Include="Classes\Operations.cs" />
     <Compile Include="Controls\NumericUpDownColumnRight.cs" />
     <Compile Include="Extensions\ExtensionMethods.cs" />

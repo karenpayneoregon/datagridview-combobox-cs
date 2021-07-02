@@ -26,8 +26,10 @@ namespace DataGridViewCombo1.Classes
                 using (var cmd = new SqlCommand { Connection = cn })
                 {
                     cn.Open();
+                    
                     cmd.CommandText = "SELECT id,Item,ColorId,CustomerId, qty, InCart, VendorId  FROM Product";
                     CustomerTable.Load(cmd.ExecuteReader());
+                    
                 }
             }
         }
