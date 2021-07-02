@@ -32,19 +32,21 @@
             this.DisplayInformationTextBox = new System.Windows.Forms.TextBox();
             this.CurrentRowViewButton = new System.Windows.Forms.Button();
             this.CustomersDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numericUpDownColumnRight1 = new DataGridViewCombo1.Controls.NumericUpDownColumnRight();
             this.ItemTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.QtyNumericUpDownColumn = new DataGridViewCombo1.Controls.NumericUpDownColumnRight();
             this.InCartCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.VendorComboBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numericUpDownColumnRight1 = new DataGridViewCombo1.Controls.NumericUpDownColumnRight();
+            this.GetCheckedButton = new System.Windows.Forms.Button();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel1
             // 
+            this.Panel1.Controls.Add(this.GetCheckedButton);
             this.Panel1.Controls.Add(this.DisplayInformationTextBox);
             this.Panel1.Controls.Add(this.CurrentRowViewButton);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -85,18 +87,6 @@
             this.CustomersDataGridView.Size = new System.Drawing.Size(563, 187);
             this.CustomersDataGridView.TabIndex = 3;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // numericUpDownColumnRight1
-            // 
-            this.numericUpDownColumnRight1.DecimalPlaces = 2;
-            this.numericUpDownColumnRight1.HeaderText = "Qty";
-            this.numericUpDownColumnRight1.Name = "numericUpDownColumnRight1";
-            // 
             // ItemTextBoxColumn
             // 
             this.ItemTextBoxColumn.HeaderText = "Item";
@@ -124,6 +114,28 @@
             // 
             this.VendorComboBoxColumn.HeaderText = "Vendor";
             this.VendorComboBoxColumn.Name = "VendorComboBoxColumn";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // numericUpDownColumnRight1
+            // 
+            this.numericUpDownColumnRight1.DecimalPlaces = 2;
+            this.numericUpDownColumnRight1.HeaderText = "Qty";
+            this.numericUpDownColumnRight1.Name = "numericUpDownColumnRight1";
+            // 
+            // GetCheckedButton
+            // 
+            this.GetCheckedButton.Location = new System.Drawing.Point(12, 3);
+            this.GetCheckedButton.Name = "GetCheckedButton";
+            this.GetCheckedButton.Size = new System.Drawing.Size(75, 23);
+            this.GetCheckedButton.TabIndex = 4;
+            this.GetCheckedButton.Text = "Checked";
+            this.GetCheckedButton.UseVisualStyleBackColor = true;
+            this.GetCheckedButton.Click += new System.EventHandler(this.GetCheckedButton_Click);
             // 
             // Form1
             // 
@@ -156,6 +168,7 @@
         private Controls.NumericUpDownColumnRight QtyNumericUpDownColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn InCartCheckBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn VendorComboBoxColumn;
+        private System.Windows.Forms.Button GetCheckedButton;
     }
 }
 

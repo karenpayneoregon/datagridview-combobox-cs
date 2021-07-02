@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading;
@@ -131,6 +132,23 @@ namespace DataGridViewCombo1
 
             DisplayInformationTextBox.Text =
                 $"PK: {customerPrimaryKey} Vendor key {vendorKey} vendor: {vendorName} color id: {colorKey} - {colorName} In Cart: {inCart.ToYesNoString()}";
+        }
+        /// <summary>
+        /// Demo on how to get both checked and unchecked rows
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GetCheckedButton_Click(object sender, EventArgs e)
+        {
+            var results = (DataTable) _customerBindingSource.DataSource;
+            
+            List<DataRow> checkedItems = results.AsEnumerable().Where(row => row.Field<bool>("InCart")).ToList();
+            Console.WriteLine(checkedItems.Count);
+
+            List<DataRow> unCheckedItems = results.AsEnumerable().Where(row => row.Field<bool>("InCart") == false).ToList();
+            Console.WriteLine(unCheckedItems.Count);
+            
+
         }
     }
 }
